@@ -29,8 +29,8 @@ RUN apt-get update && \
     mkdir -p /app /config && \
 
 # create user
-    useradd -u 1000 -U -d /config -s /bin/false hotio && \
-    usermod -G users hotio && \
+    useradd -u 5555 -U -d /config -s /bin/false hotio && \
+    usermod -G users vm && \
 
 # clean up
     apt-get autoremove -y && \
