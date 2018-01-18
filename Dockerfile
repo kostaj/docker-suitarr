@@ -29,7 +29,7 @@ RUN apt-get update && \
     mkdir -p /app /config && \
 
 # create user
-    useradd -u 5555 -U -d /config -s /bin/false hotio && \
+    useradd -u 5555 -U -d /config -s /bin/false vm && \
     usermod -G users vm && \
 
 # clean up
